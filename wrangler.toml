@@ -1,0 +1,16 @@
+name = "qureo-auto-solver"
+main = "src/worker.js"
+compatibility_date = "2026-11-24"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "ANSWERS"
+database_name = "qureo-answers"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+GEMINI_MODEL = "gemini-2.0-flash"
