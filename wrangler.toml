@@ -10,7 +10,7 @@ run_worker_first = ["/api/*"]
 [[d1_databases]]
 binding = "ANSWERS"
 database_name = "qureo-answers"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "5330ce51-8744-4214-a783-e9b819649ba3"
 
 [vars]
 GEMINI_MODEL = "gemini-2.0-flash"
