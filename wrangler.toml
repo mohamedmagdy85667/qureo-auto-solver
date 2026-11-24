@@ -13,4 +13,4 @@ database_name = "qureo-answers"
 database_id = "5330ce51-8744-4214-a783-e9b819649ba3"
 
 [vars]
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-3.8-flash"
