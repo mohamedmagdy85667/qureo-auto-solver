@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>QUREO AUTO SOLVER | Mohamed Magdy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="brand-mark">Q</div>
+      <div>
+        <div class="eyebrow">PYTHON · JAVASCRIPT</div>
+        <h1>QUREO <span>AUTO SOLVER</span></h1>
+        <p class="byline">Developed by <strong>Mohamed Magdy</strong></p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="pill">مساعد برمجة</span>
+      <h2>حلّل سؤال البرمجة واحصل على الإجابة</h2>
+      <p>اختر اللغة والصق نص السؤال. سيحلّل المساعد السؤال ويعرض الإجابة المقترحة.</p>
+    </section>
+
+    <section class="panel">
+      <label for="language">لغة السؤال</label>
+      <select id="language">
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+
+      <label for="question">السؤال</label>
+      <textarea id="question" rows="7" placeholder="الصق السؤال هنا..."></textarea>
+
+      <button id="solveBtn">
+        <span id="btnText">حل السؤال</span>
+        <span id="spinner" class="spinner" hidden></span>
+      </button>
+      <p class="hint">لا تدخل كلمة مرور QUREO هنا. هذا الإصدار لا يسجّل الدخول إلى المنصة ولا يرسل إجابات نيابةً عنك.</p>
+    </section>
+
+    <section class="result panel" id="resultPanel" hidden>
+      <div class="result-head">
+        <h3>الإجابة المقترحة</h3>
+        <button class="copy" id="copyBtn" type="button">نسخ</button>
+      </div>
+      <pre id="answer"></pre>
+      <p id="cacheNote" class="cache-note"></p>
+    </section>
+
+    <footer>© <span id="year"></span> Mohamed Magdy · QUREO AUTO SOLVER</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
